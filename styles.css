@@ -25,6 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: small;
 }
 
 .services ul {
@@ -58,10 +59,11 @@ header {
   cursor: pointer;
 }
 .apps .button-sign {
-  padding: .5rem 1.5rem .75rem 1.5rem;
+  padding: .75rem 1.5rem;
   background-color: #1a73e8;
   color: white;
   border-radius: 4px;
+  font-size: 0.875rem;
   text-decoration: none;
 }
 .apps .button-sign:hover {
@@ -133,6 +135,7 @@ header {
 footer {
   background-color: #f2f2f2;
   color: #70757a;
+  font-size: 0.875rem;
 }
 
 .location {
@@ -142,6 +145,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.9375rem;
 }
 
 
@@ -206,6 +210,14 @@ footer {
     padding: 0 1rem;
   }
   .main {
-    padding-bottom: 13rem;
+    padding-bottom: 12rem;
+  }
+
+  .logo {
+    padding-bottom: 1.5rem;
+  }
+
+  .search {
+    padding: .5rem .875rem;
   }
 }

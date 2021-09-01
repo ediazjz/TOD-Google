@@ -1,3 +1,5 @@
+console.log("Hello, world!")
+
 const searchInput = document.getElementById("searchInput")
 const searchContainer = document.getElementsByClassName("search")[0]
 
