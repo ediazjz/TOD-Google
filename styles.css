@@ -4,14 +4,24 @@ body {
 body, input {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main, header {
+  width: calc(100% - (1rem * 2));
+}
+footer {
+  width: 100%;
 }
 .main, header, .location {
   padding: 0 1rem;
 }
 
 header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .75rem !important;
+  padding-bottom: .75rem !important;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -126,8 +136,8 @@ footer {
 }
 
 .location {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   border-bottom: 1px solid #dadce0;
   display: flex;
   align-items: center;
@@ -179,5 +189,23 @@ footer {
   }
   .menus__container {
     width: max-content;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    width: calc(100% - (2rem * 2));
+  }
+  header {
+    width: calc(100% - (1rem * 2));
+  }
+  .main, .location {
+    padding: 0 2rem;
+  }
+  header, .menus {
+    padding: 0 1rem;
+  }
+  .main {
+    padding-bottom: 13rem;
   }
 }
