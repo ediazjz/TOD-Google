@@ -1,6 +1,5 @@
 body {
   height: 100vh;
-  padding: 0 1rem;
 }
 body, input {
   font-family: 'Open Sans', sans-serif;
@@ -15,6 +14,9 @@ body, input {
 }
 .main form {
   width: 100%;
+}
+.main, header, .location {
+  padding: 0 1rem;
 }
 
 .logo {
@@ -69,6 +71,47 @@ body, input {
   cursor: pointer;
 }
 
+footer {
+  background-color: #f2f2f2;
+  color: #70757a;
+}
+
+.location {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dadce0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.menus li {
+  padding: 1rem;
+}
+.menus a {
+  color: inherit !important;
+  text-decoration: none;
+}
+.menus li:hover a {
+  text-decoration: underline;
+}
+.menus__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#howSearchWorks {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .main form {
     max-width: 576px;
@@ -76,5 +119,16 @@ body, input {
 
   .buttons {
     padding-top: 1rem;
+  }
+
+  .location {
+    justify-content: flex-start;
+  }
+  
+  .menus {
+    justify-content: space-between;
+  }
+  .menus__container {
+    width: max-content;
   }
 }
