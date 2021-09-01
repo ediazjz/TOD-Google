@@ -5,6 +5,58 @@ body, input {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
+.main, header, .location {
+  padding: 0 1rem;
+}
+
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.services ul {
+  display: flex;
+  align-items: center;
+}
+.services li {
+  padding-left: 1rem;
+}
+.services li a {
+  color: rgba(0,0,0,0.87) !important;
+  text-decoration: none;
+}
+.services li:hover a {
+  text-decoration: underline;
+}
+
+.apps {
+  display: flex;
+  align-items: center;
+}
+.apps * {
+  margin-left: 1rem;
+}
+.apps span {
+  padding: .5rem;
+  border-radius: 999px;
+}
+.apps span:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.apps .button-sign {
+  padding: .5rem 1.5rem .75rem 1.5rem;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.apps .button-sign:hover {
+  box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+}
 
 .main {
   display: flex;
@@ -14,9 +66,6 @@ body, input {
 }
 .main form {
   width: 100%;
-}
-.main, header, .location {
-  padding: 0 1rem;
 }
 
 .logo {
@@ -124,7 +173,7 @@ footer {
   .location {
     justify-content: flex-start;
   }
-  
+
   .menus {
     justify-content: space-between;
   }
