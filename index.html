@@ -8,29 +8,34 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Material Icons -->
+    <!-- Google Fonts & Material Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Google</title>
   </head>
 
   <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-    
-    <form>
-      <div class="search">
-        <span class="material-icons search__icon">
-          search
-        </span>
-        
-        <input id="searchInput" class="search__input" type="search">
-      </div>
-    
-      <div class="buttons">
-        <input class="buttons__search" type="submit" value="Google Search">
-        <input class="buttons__search" type="submit" value="I'm feeling lucky">
-      </div>
-    </form>
+    <div class="main">
+      <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+      
+      <form>
+        <div class="search">
+          <span class="material-icons search__icon">
+            search
+          </span>
+          
+          <input id="searchInput" class="search__input" type="search">
+        </div>
+      
+        <div class="buttons">
+          <input class="buttons__search" type="submit" value="Google Search">
+          <input class="buttons__search" type="submit" value="I'm feeling lucky">
+        </div>
+      </form>
+    </div>
 
     <script type="text/javascript" src="scripts.js" />
   </body>
